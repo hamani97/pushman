@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_layout"
+        android:paddingTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="#dddddd">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:paddingBottom="30dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView style="@style/settings_sub_title"
+                android:text="@string/detail_more_title" />
+
+            <LinearLayout style="@style/detail_box_head">
+
+                <LinearLayout style="@style/detail_box_row_line">
+                    <TextView style="@style/detail_row_name"
+                        android:text="@string/detail_title_parent" />
+                    <TextView style="@style/detail_row_data"
+                        android:id="@+id/txt_parent"
+                        android:text="" />
+                </LinearLayout>
+                <LinearLayout style="@style/detail_box_row_line">
+                    <TextView style="@style/detail_row_name"
+                        android:text="@string/detail_title_factory" />
+                    <TextView style="@style/detail_row_data"
+                        android:id="@+id/txt_factory"
+                        android:text="" />
+                </LinearLayout>
+                <LinearLayout style="@style/detail_box_row_line">
+                    <TextView style="@style/detail_row_name"
+                        android:text="@string/detail_title_line" />
+                    <TextView style="@style/detail_row_data"
+                        android:id="@+id/txt_line"
+                        android:text="" />
+                </LinearLayout>
+                <LinearLayout style="@style/detail_box_row_line">
+                    <TextView
+                        style="@style/detail_row_name"
+                        android:text="@string/detail_title_model" />
+                    <TextView style="@style/detail_row_data"
+                        android:id="@+id/txt_model"
+                        android:text="" />
+                </LinearLayout>
+                <LinearLayout style="@style/detail_box_row_line">
+                    <TextView style="@style/detail_row_name"
+                        android:text="@string/detail_title_machine_no" />
+                    <TextView style="@style/detail_row_data"
+                        android:id="@+id/txt_machine_no"
+                        android:text="" />
+                </LinearLayout>
+                <LinearLayout style="@style/detail_box_row_line">
+                    <TextView style="@style/detail_row_name"
+                        android:text="@string/detail_title_mac" />
+                    <TextView style="@style/detail_row_data"
+                        android:id="@+id/txt_mac_addr"
+                        android:text="" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/detail_box_row">
+                <LinearLayout style="@style/detail_box_row_line">
+                    <TextView style="@style/detail_row_name"
+                        android:text="@string/detail_title_worker" />
+                    <TextView style="@style/detail_row_data"
+                        android:id="@+id/txt_worker"
+                        android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/detail_box_tail">
+                <LinearLayout style="@style/detail_box_row_line">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/txt_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:text="@string/detail_title_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/txt_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="Date"
+                            android:textSize="15sp"
+                            android:textColor="@color/LIGHTGRAY" />
+                        <TextView
+                            android:id="@+id/txt_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="Time"
+                            android:textSize="15sp"
+                            android:textColor="@color/LIGHTGRAY" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="28dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/warning48" />
+                <TextView
+                    android:id="@+id/txt_status_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Message" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/detail_box_head">
+                <LinearLayout style="@style/detail_box_row_line">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:text="Worklist" />
+                    <TextView
+                        android:id="@+id/txt_reply_cnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:text="0"
+                        android:textSize="15sp"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/count_round"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/list_reply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/REPLY_DIVIDER_COLOR"
+                android:dividerHeight="0.67dp" />
+
+            <TextView
+                android:id="@+id/empty_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:paddingVertical="20dp"
+                android:text="@string/no_worklist"
+                android:textColor="#838383"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/button_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_settings_catch"
+            style="@style/button_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:visibility="gone"
+            android:background="@drawable/btn_settings_catch2"
+            android:text="@string/btn_fix_it" />
+        <Button
+            android:id="@+id/btn_settings_complete"
+            style="@style/button_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:visibility="gone"
+            android:background="@drawable/btn_settings_submit2"
+            android:text="@string/btn_complete" />
+        <Button
+            android:id="@+id/btn_settings_cancel"
+            style="@style/button_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:visibility="gone"
+            android:background="@drawable/btn_settings_cancel2"
+            android:text="@string/btn_cancel" />
+        <Button
+            android:id="@+id/btn_settings_back"
+            style="@style/button_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/btn_settings_back2"
+            android:text="@string/btn_back" />
+    </LinearLayout>
+
+</LinearLayout>

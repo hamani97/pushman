@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/button_line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#dddddd">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/settings_sub_title"
+                android:text="@string/setting_user_title" />
+
+            <LinearLayout style="@style/settings_box_head">
+                <TextView
+                    style="@style/settings_row_name"
+                    android:text="@string/setting_user_name" />
+                <EditText
+                    android:id="@+id/edit_user_name"
+                    style="@style/settings_row_data"
+                    android:inputType="text"
+                    android:hint="@string/hint_user_name" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/settings_box_tail">
+                <TextView
+                    style="@style/settings_row_name"
+                    android:text="@string/setting_user_empno" />
+                <EditText
+                    android:id="@+id/edit_user_empno"
+                    style="@style/settings_row_data"
+                    android:inputType="text"
+                    android:hint="@string/hint_user_empno" />
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/settings_sub_title"
+                android:text="@string/setting_server_title" />
+
+            <LinearLayout style="@style/settings_box_head">
+                <TextView
+                    style="@style/settings_row_name"
+                    android:text="@string/setting_server_ip" />
+                <EditText
+                    android:id="@+id/edit_server_ip"
+                    style="@style/settings_row_data"
+                    android:inputType="textUri"
+                    android:hint="@string/hint_server_ip" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/settings_box_tail">
+                <TextView
+                    style="@style/settings_row_name"
+                    android:text="@string/setting_server_port" />
+                <EditText
+                    android:id="@+id/edit_server_port"
+                    style="@style/settings_row_data"
+                    android:inputType="number"
+                    android:hint="@string/hint_server_port" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/settings_box_head"
+                android:layout_marginTop="20dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/show_all_data" />
+                <Switch
+                    android:id="@+id/sw_all_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/settings_box_tail"
+                android:id="@+id/btn_ll_notice"
+                android:paddingTop="12dp"
+                android:paddingBottom="9dp">
+                <TextView
+                    style="@style/settings_row_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/setting_notice" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_arrow_right_black_32dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/settings_box_one"
+                android:layout_marginTop="20dp">
+                <TextView
+                    style="@style/settings_row_name"
+                    android:text="@string/setting_server_version" />
+                <TextView
+                    style="@style/settings_row_data_right"
+                    android:id="@+id/text_version"
+                    android:text="@string/app_version" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/button_line"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_settings_save"
+            style="@style/button_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_settings_submit2"
+            android:text="@string/btn_submit" />
+        <Button
+            android:id="@+id/btn_settings_back"
+            style="@style/button_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_settings_back2"
+            android:text="@string/btn_back" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">SUNTECH</string>
+    <string name="app_version">2.1.0</string>
+    <string name="show_all_data">Show all data</string>
+    <string name="title_home">Home</string>
+    <string name="title_messages">Messages</string>
+    <string name="title_warning">Warning</string>
+    <string name="title_my_work">My work</string>
+    <string name="title_working">Working</string>
+    <string name="title_complete">Complete</string>
+    <string name="title_myjob">My Job</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_detail">Device state</string>
+    <string name="title_notice">Notice</string>
+
+    <string name="show_all">Show all device status</string>
+    <string name="show_warning">Show unprocessed devices</string>
+    <string name="show_working">Show working devices</string>
+    <string name="show_complete">Show completed devices</string>
+    <string name="show_yourjob">Work related to you</string>
+
+    <string name="detail_more_title">Information</string>
+    <string name="detail_progress_title">Progress</string>
+
+    <string name="setting_user_title">User information</string>
+    <string name="setting_user_empno">Employee No.</string>
+    <string name="setting_user_name">Name</string>
+
+    <string name="setting_server_title">Server information</string>
+    <string name="setting_server_ip">IP address</string>
+    <string name="setting_server_version">Version</string>
+    <string name="setting_server_port">Port</string>
+    <string name="setting_notice">Notice</string>
+    <string name="setting_client_version">Version</string>
+
+    <string name="hint_user_name">ex) fred</string>
+    <string name="hint_user_empno">ex) 1234</string>
+    <string name="hint_server_ip">ex) 192.168.10.10</string>
+    <string name="hint_server_port">ex) 80</string>
+
+    <string name="detail_title_parent">Factory</string>
+    <string name="detail_title_factory">zone</string>
+    <string name="detail_title_line">Line</string>
+    <string name="detail_title_model">MC-Model</string>
+    <string name="detail_title_machine_no">Machine no.</string>
+    <string name="detail_title_mac">Mac address</string>
+    <string name="detail_title_worker">Worker</string>
+    <string name="detail_title_content">Content</string>
+
+    <string name="btn_fix_it">I will fix it</string>
+    <string name="btn_complete">Complete</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_back">Back</string>
+
+    <string name="unavailable">Unavailable !!</string>
+    <string name="cannot_be_use">Can not be used</string>
+    <string name="wait_for_approval">Waiting for approval</string>
+
+    <string name="no_device_id">This device is not available.\nNo device ID was created.</string>
+    <string name="no_server_addr">The server IP address is not set.\nSet the IP address in the Settings menu.</string>
+    <string name="no_server_port">The server port is not set.\nSet the port in the Settings menu.</string>
+    <string name="no_data">No data to display</string>
+    <string name="no_worklist">No worklist to display</string>
+    <string name="no_list">No list to display</string>
+    <string name="no_handler">There is no handler.</string>
+    <string name="no_string"></string>
+    <string name="use_use_available">Available device.</string>
+    <string name="use_stop">Unavailable device(or user)</string>
+    <string name="use_wait">Please wait for approval to use</string>
+    <string name="use_wait_connect">Please wait for customization</string>
+
+    <string name="alert_msg_quit">Do you want to quit the app</string>
+
+</resources>

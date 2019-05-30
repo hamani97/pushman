@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="navigationBack">#ededed</color>
+    <color name="MAIN_ROW_TITLE">#ff555555</color>
+    <color name="MAIN_ROW_TITLE_FOCUS">#618ec6</color>
+    <color name="REPLY_DIVIDER_COLOR">#e9e9e9</color>
+
+    <color name="WHITE">#ffffffff</color>
+    <color name="BLUE">#ff000099</color>
+    <color name="GREEN">#ff009900</color>
+    <color name="GRAY">#ff999999</color>
+    <color name="LIGHTGRAY">#ffa0a0a0</color>
+</resources>

@@ -1,0 +1,137 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textSize">17dp</item>
+    </style>
+
+    <style name="main_header_buttons">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/count_back</item>
+    </style>
+    <style name="main_header_buttons_count">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">0</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/MAIN_ROW_TITLE</item>
+    </style>
+    <style name="main_header_buttons_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/LIGHTGRAY</item>
+    </style>
+
+    <style name="settings_sub_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <style name="settings_row_frame">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+
+    <style name="settings_box_head" parent="settings_row_frame">
+        <item name="android:background">@drawable/back_settings_head</item>
+    </style>
+    <style name="settings_box_row" parent="settings_row_frame">
+        <item name="android:background">@drawable/back_settings_row</item>
+    </style>
+    <style name="settings_box_tail" parent="settings_row_frame">
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:background">@drawable/back_settings_tail</item>
+    </style>
+    <style name="settings_box_one" parent="settings_row_frame">
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:background">@drawable/back_settings_one</item>
+    </style>
+
+    <style name="settings_row_name">
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="settings_row_data">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/edit_round</item>
+    </style>
+    <style name="settings_row_data_right">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">right</item>
+        <item name="android:background">@drawable/edit_round</item>
+    </style>
+
+    <style name="button_style">
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">19dp</item>
+    </style>
+
+
+
+    <style name="detail_box_head" parent="settings_box_head">
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="detail_box_row" parent="settings_box_row">
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="detail_box_tail" parent="settings_box_tail">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">23dp</item>
+        <item name="android:paddingRight">23dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="detail_box_row_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="detail_row_name">
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="detail_row_data">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+</resources>
